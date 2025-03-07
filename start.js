@@ -1,34 +1,11 @@
-
 function calcul()
 {
 	var AB=parseFloat(document.getElementById('v1').value);
 	var AC=parseFloat(document.getElementById('v2').value);
 	var BC= Math.sqrt(AB*AB+AC*AC);
-	document.getElementById('reponse').innerHTML="l'hypotenuse vaut "+ BC;
-}
-var change = 1
-function changer()
-{
-
-document.getElementById('image').src='vegeta_win.png';
-change+=1
-
-if (change==3)
-{
-change+=1
-document.getElementById('image').src='vegeta.png';
+	document.getElementById('reponse').innerHTML="the hypotenuse is equal to :"+ BC;
 }
 
-if (change==5)
-{change+=1
-document.getElementById('image').src='goku.png';
-}
-
-if (change==7)
-{change-=6
-document.getElementById('image').src='goku_win.png';
-}
-}
 
 var nb_jeu = parseInt(Math.random()*100)+1
 function jeu()
@@ -37,15 +14,15 @@ var nb_choisit=parseInt(document.getElementById('v3').value);
 
 if (nb_choisit==nb_jeu)
 {
-document.getElementById('reponse2').innerHTML="BRAVO TA GAGNER <br/> tu veux rejouer ?";
+document.getElementById('reponse2').innerHTML="WELL DONE !! <br/> wanna try again  ?";
 }
 else if (nb_choisit>nb_jeu)
 {
-document.getElementById('reponse2').innerHTML+="ah non ton "+nb_choisit+" est trop grand, choisit encore<br/>";
+document.getElementById('reponse2').innerHTML+="nope nice try, "+nb_choisit+" is too big. try again<br/>";
 }
 else 
 {
-document.getElementById('reponse2').innerHTML+="ah non "+nb_choisit+" est trop petit, choisit encore<br/>";
+document.getElementById('reponse2').innerHTML+="nope nice try, "+nb_choisit+" is too small. try again<br/>";
 }
 }
 function restart()
@@ -74,9 +51,9 @@ function  angle()
 	}
 	else
 	{
-	droit="aucune des angles car ce n'est pas rectangle";
+	droit="none of the angles because the triangle is not right";
 	}
-	document.getElementById('reponse3').innerHTML="le triangle est rectangle en "+droit;
+	document.getElementById('reponse3').innerHTML="the triangle is right in "+droit;
 }
 function count() 
 {
@@ -90,10 +67,33 @@ function count()
 	}
 	
 	}
-	document.getElementById('reponse4').innerHTML = "la lettre e reviens " + e +" fois dans le texte ";
+	document.getElementById('reponse4').innerHTML = "la letter e is present " + e +" times in your text ";
 }
+ function checkAnswers() 
+        
+		{
+		var score = 0
+        
+        if (document.getElementById('q1a').checked) {
+            score+= 1;
+        }
+        
 
+        
+        if (document.getElementById('q2a').checked) {
+            score+= 1;
+        }
 
+		if (document.getElementById('q3b').checked) {
+            score+= 1;
+        }
+		
+		if (document.getElementById('q4c').checked) {
+            score+= 1;
+        }
+
+        document.getElementById('response5').textContent	= "Your score: " + score + "/4";
+    }
 
 
 
