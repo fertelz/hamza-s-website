@@ -3,21 +3,21 @@
 	<head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <title>my website</title>
+        <title>The 5 exercices</title>
 		<script src="start.js"></script>
     <style type="text/css" id="operaUserStyle"></style></head>
 	
-	<h1 class=page2>the 5 exercices</h1>
+	<h1 class=page2>The 5 exercices</h1>
 <br/><br/><br/><br/><br/><br/><br/><br/>
     <body class="ex_page">
 	<p>
-entrer la valeur AB
+enter the value AB
 <input id="v1" value="">
 </p>
 
 
 <p>
-entrer la valeur AC
+enter the value AC
 <input id="v2" value="">
 <br/>
 <input type="button" value="calculer" onclick="calcul()">
@@ -27,7 +27,7 @@ entrer la valeur AC
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <p>
-pour commencer le jeu, devine un nombre entre 0 et 100 :)
+to start the game, guess a number between 0 and 100 :)
 <br/>
 <input id="v3" value=""><br/>
 <input type="button" value="proposer le nombre" onclick="jeu()"><input type="button" value="recomencer ?" onclick="restart()">
@@ -41,17 +41,17 @@ pour commencer le jeu, devine un nombre entre 0 et 100 :)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <p>
-entrer la valeur AB
+enter the value AB
 <input id="v4" value="">
 </p>
 
 <p>
-entrer la valeur BC
+enter the value BC
 <input id="v5" value="">
 </p>
 
 <p>
-entrer la valeur AC
+enter the value AC
 <input id="v6" value="">
 <br/>
 <input type="button" value="calculer" onclick="angle()">
@@ -64,13 +64,51 @@ entrer la valeur AC
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <p>
-ecrit un texte et je vais compter les "e"
+write a text and i'll count how many "e"s there are
 <input id="v7" value="">
 <br/>
 <input type="button" value="compter" onclick="count()">
 <p id="reponse4">
 </p>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+	
+
+<p>1. In which year was *Halo: Combat Evolved* released?<br/>
+<input type="radio" name="q1" value="2001" id="q1a"> 2001 <br/>
+<input type="radio" name="q1" value="1999" id="q1b"> 1999<br/>
+<input type="radio" name="q1" value="2003" id="q1c"> 2003<br/><br/>
+</p>
+
+<p>2. What is the name of Mario's brother?<br/>
+<input type="radio" name="q2" value="Luigi" id="q2a"> Luigi <br/>
+<input type="radio" name="q2" value="Mario" id="q2b"> Mario<br/>
+<input type="radio" name="q2" value="Peach" id="q2c"> Peach<br/><br/>
+</p>
+
+
+<p>3. who is the main protagonist of the last of us 2?
+<br/>
+<input type="radio" name="q3" value="Barack Obama" id="q3a"> Barack Obama<br/>
+<input type="radio" name="q3" value="Ellie Williams" id="q3b"> Ellie Williams<br/>
+<input type="radio" name="q3" value="Joel Miller" id="q3a"> Joel Miller<br/><br/>
+</p>
+<p>4. who is the developer of pokemon?<br/>
+ <input type="radio" name="q4" value="Takashi Tezuka" id="q4a"> Takashi Tezuka<br/>
+<input type="radio" name="q4" value="Shigeru Miyamoto" id="q4b"> Shigeru Miyamoto<br/>
+<input type="radio" name="q4" value="Satoshi Tajiri" id="q4c"> Satoshi Tajiri<br/><br/>
+
+
+
+<button type="button" onclick="checkAnswers()">Submit</button>
+</p>
+
+<p id="response5"></p>
+
+
+
+
+
+<br/><br/><br/><br/>
 <nav>
             <ul>
                 <li><a href="new2.html">Home page</a></li>
